@@ -1,5 +1,6 @@
 package com.mariuszpawlowski;
 
+import com.mariuszpawlowski.turismonaescocia.TurismonaescociaApplication;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.web.WebAppConfiguration;
