@@ -7,11 +7,13 @@ import org.springframework.boot.context.embedded.ErrorPage;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.http.HttpStatus;
 
 @EnableAutoConfiguration
 @Configuration
 @ComponentScan
+@PropertySource(name="EncryptedProperties", value = "classpath:encrypted.properties")
 public class TurismonaescociaApplication {
 
 	public static void main(String[] args) {
