@@ -28,7 +28,7 @@ public class MailSendService {
     @Value("${contact.form.title}")
     private String emailTitle;
 
-    public EmailStatus sendContactForm(String name, String phone, String email, String message) throws UnsupportedEncodingException {
+    public EmailStatus sendContactForm(String name, String email, String message) throws UnsupportedEncodingException {
 
         InternetAddress from = new InternetAddress();
         from.setAddress(sendTo);
@@ -36,7 +36,6 @@ public class MailSendService {
 
         Context context = new Context();
         context.setVariable("name", name);
-        context.setVariable("phone", phone);
         context.setVariable("email", email);
         context.setVariable("message", message);
 

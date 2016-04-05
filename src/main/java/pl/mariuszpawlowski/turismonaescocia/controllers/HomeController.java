@@ -33,7 +33,7 @@ public class HomeController {
         EmailStatus status = null;
 
         try {
-            status = mailSendService.sendContactForm(contactForm.getName(), contactForm.getPhone(), contactForm.getEmail(), contactForm.getMessage());
+            status = mailSendService.sendContactForm(contactForm.getName(), contactForm.getEmail(), contactForm.getMessage());
         } catch (UnsupportedEncodingException e) {
             resultTemplate = "index_email_failed";
         }
